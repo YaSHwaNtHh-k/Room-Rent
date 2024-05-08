@@ -1,2 +1,6 @@
 <% layout("layouts/boilerplate.ejs") %>
-<h1>User Profile</h1>
+<div class="profile">
+    <h1 style="text-align: center;">Profile</h1>
+    <h3><u>Name</u> : <%= user.username %></h3>
+    <h3><u>Email</u> : <%= user.email %></h3>
+</div>

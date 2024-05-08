@@ -26,3 +26,16 @@
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
+
+
+/* Signup */
+
+.profile{
+    height: 30vh;
+    width: 40vw;
+    border: 1px solid black;
+    border-radius: 2rem;
+    margin: 20vh 22vw;
+    padding-left: 2vw;
+    padding-top: 2vh;
+}

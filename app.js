@@ -93,6 +93,9 @@ app.use((req,res,next)=>{
   next();
 });
 
+app.get("/",(req,res)=>{
+  res.render("/listings")
+})
 
 app.use("/",listingRouter)
 app.use("/listings",reviewRouter)
