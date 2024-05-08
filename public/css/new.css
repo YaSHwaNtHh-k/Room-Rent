@@ -1,0 +1,21 @@
+.new{
+    margin: 5vh 10vw 5vh 25vw;
+}
+.new-head{
+    text-align: center;
+    margin:4vh 0 0 0;
+}
+button{
+    padding: 1vh 2vw;
+    border: 2px solid black;
+    border-radius: 2rem;
+    color: white;
+    background-color: red;
+}
+button:hover{
+    color: red;
+    background-color: cyan;
+}
+.btn-primary{
+    margin: 1vh 10vw 1vh 16vw;
+}

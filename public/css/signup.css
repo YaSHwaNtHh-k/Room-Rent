@@ -1,0 +1,28 @@
+.heading{
+    text-align: center;
+    margin-top: 2vh;
+}
+.heading-reg{
+    margin-top: 4vh;
+    text-align: center;
+}
+.cont-log{
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin:3vw 20vw 20.8vh 20vw;
+}
+.cont{
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: 8.7vh 25vw;
+}
+.register{
+    margin: 3.2vh 4vw;
+}
+.register label{
+    margin-bottom: 1vh;
+}
+.register-btn{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}

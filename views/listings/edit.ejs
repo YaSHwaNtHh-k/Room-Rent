@@ -1,0 +1,65 @@
+<% layout(("/layouts/boilerplate.ejs")) %>
+<div class="edit">
+  <h3 class="edit-head">Edit You'r Listing</h3>
+  <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" class="row g-3 needs-validation" novalidate enctype="multipart/form-data">
+    <div class="col-md-6 position-relative">
+      <label for="validationTooltip01">Title</label>
+      <input name="listing[title]" class="form-control" placeholder="enter Title" value="<%= listing.title %>" type="text" id="validationTooltip01" required>
+      <div class="invalid-tooltip">
+        Title Required
+      </div>
+    </div>
+    <div class="col-md-3 position-relative  mt-2">
+      <label for="validationTooltip02" class="form-label">Price</label>
+      <input id="validationTooltip02" name="listing[price]" class="form-control" placeholder="enter price" value="<%= listing.price %>" type="number" required>
+      <div class="invalid-tooltip">
+        Price Required
+      </div>
+    </div>
+    <div class="col-md-6 position-relative">
+      <label for="validationTooltip03" class="form-label">Location</label>
+      <input type="text" name="listing[location]" class="form-control" placeholder="enter Location" value="<%= listing.location %>" id="validationTooltip03" required>
+      <div class="invalid-tooltip">
+        Please provide a valid Location.
+      </div>
+    </div>
+    <div class="col-md-3 position-relative">
+      <label for="validationTooltip04" class="form-label">Country</label>
+      <input type="text" name="listing[country]" class="form-control" value="<%= listing.country %>" id="validationTooltip04" required>
+      <div class="invalid-tooltip">
+        Please select a valid Country.
+      </div>
+    </div>
+    <div class="mb-3 position-relative">
+      <label for="validationTooltip04" class="form-label">Orginal Image</label>
+      <br>
+      <img src="<%= orginalUrl %>" style="height: 30vh; width: 15vw; border-radius: 2rem;">
+    </div>
+    <div class="col-md-9 position-relative">
+      <label for="validationTooltip04" class="form-label">Image</label>
+      <input type="file" name="listing[image]" class="form-control" value="<%= listing.image %>" id="validationTooltip04">
+      <div class="invalid-tooltip">
+        Please select a valid Country.
+      </div>
+    </div>
+    <div class="col-md-9 position-relative" style="margin-top: 3.5vh;">
+      <select class="form-select select" name="listing[category]">
+        <option value="Mountains">Mountains</option>
+        <option value="Castel">Castel</option>
+        <option value="Pools">Pools</option>
+        <option value="Camping">Camping</option>
+        <option value="Farming">Farming</option>
+        <option value="Rooms">Rooms</option>
+      </select>
+    </div>
+    <div class="col-md-9 position-relative">
+      <label for="validationTooltip05" class="form-label">Description</label>
+      <textarea type="text" name="listing[description]" class="form-control"  id="validationTooltip05" required>
+        <%= listing.description %>
+      </textarea>
+    </div>
+    <div class="col-13">
+      <button class="btn btn-primary" type="submit">Edit</button>
+    </div>
+  </form>
+</div>

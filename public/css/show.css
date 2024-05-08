@@ -1,0 +1,35 @@
+.show{
+    margin: 2vw 20vw 2vw 20vw;
+}
+.show-img{
+    height: 45vh;
+    width: 30vw;
+    border-radius: 2rem;
+    object-fit: cover;
+    margin: 2vh 0;
+}
+h5{
+    padding: 1vh 0;
+}
+.edit-del{
+    display: flex;
+    gap: 10vw;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+button a:hover{
+    text-decoration: none;
+    color: red;
+}
+.edit-del button{
+    padding: 1vh 1vw;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+}
+.edit-del button:hover{
+    color: red;
+    background-color: cyan;
+}
